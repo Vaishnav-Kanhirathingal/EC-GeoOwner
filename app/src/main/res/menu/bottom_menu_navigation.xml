@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/update"
+        android:enabled="true"
+        android:icon="@drawable/update"
+        android:title="@string/update"
+        />
+    <item
+        android:id="@+id/orders"
+        android:enabled="true"
+        android:icon="@drawable/orders"
+        android:title="@string/orders" />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="@string/profile" />
+</menu>
