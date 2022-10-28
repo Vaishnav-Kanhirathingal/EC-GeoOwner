@@ -3,7 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/drawable/update.xml" value="0.1805" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/activity_main.xml" value="0.1609375" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/activity_menus.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/activity_otp_verification.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/activity_scanner_cam.xml" value="0.1" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/fragment_orders.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/fragment_update.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/layout/updatedialog.xml" value="0.21641791044776118" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/menu/bottom_menu_navigation.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/EC-GeoOwner/app/src/main/res/menu/top_app_bar.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ECGeoOwner2/app/src/main/res/drawable/orders.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ECGeoOwner2/app/src/main/res/drawable/otpbox.xml" value="0.1795" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/ECGeoOwner2/app/src/main/res/drawable/profile.xml" value="0.1" />

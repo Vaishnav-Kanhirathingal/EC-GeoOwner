@@ -36,7 +36,7 @@ public class Menus extends AppCompatActivity {
                         ReplaceFragment(new Profile());
                         break;
                 }
-                return false;
+                return true;
             }
         });
     }
