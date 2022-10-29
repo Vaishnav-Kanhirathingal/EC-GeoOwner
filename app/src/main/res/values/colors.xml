@@ -9,6 +9,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F42A0F</color>
 <!--    orders bg-->
-    <color name="lightRed">#FA939C</color>
-    <color name="lightGreen">#AFE66F</color>
+    <color name="lightRed">#FFEEEE</color>
+    <color name="lightGreen">#EEFFEE</color>
+
+    <color name="primaryColor">#fcb762</color>
+    <color name="primaryLightColor">#ffe992</color>
+    <color name="primaryDarkColor">#c68734</color>
+    <color name="secondaryColor">#bb3c2b</color>
+    <color name="secondaryLightColor">#f36d55</color>
+    <color name="secondaryDarkColor">#840001</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#ffffff</color>
 </resources>

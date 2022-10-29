@@ -134,14 +134,12 @@ public class ScannerCam extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.show();
         dialogBinding.productName.setText(rawValue);
-        dialogBinding.addBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // TODO: 28-10-2022 check if qty & discount is filled
+        dialogBinding.addBtn.setOnClickListener(view -> {
+            // TODO: 28-10-2022 check if qty & discount is filled
 
-                startActivity(new Intent(ScannerCam.this, MainActivity.class));
-            }
+            startActivity(new Intent(ScannerCam.this, MainActivity.class));
         });
+        dialogBinding.cancelBtn.setOnClickListener(view -> dialog.dismiss());
 
     }
 
