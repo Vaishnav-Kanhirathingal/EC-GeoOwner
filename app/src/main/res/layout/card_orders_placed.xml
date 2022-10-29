@@ -48,7 +48,5 @@
                 android:textSize="18sp"
                 tools:text="@string/_0" />
         </LinearLayout>
-
-
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
