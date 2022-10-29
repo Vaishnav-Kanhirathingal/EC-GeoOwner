@@ -2,6 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="6dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,12 +21,13 @@
             android:textAlignment="center"/>
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="300dp"
             android:backgroundTint="@color/lightGreen">
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:listitem="@layout/card_order_item">
 
             </androidx.recyclerview.widget.RecyclerView>
         </com.google.android.material.card.MaterialCardView>
