@@ -2,17 +2,22 @@ package com.example.ec_geoowner;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+
+import com.example.ec_geoowner.databinding.FragmentOrdersBinding;
 
 public class Orders extends Fragment {
 
+    FragmentOrdersBinding binding;
     public Orders() {
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,20 @@ public class Orders extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_orders, container, false);
+        binding=FragmentOrdersBinding.inflate(getLayoutInflater());
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        //binding.recyclerView.setAdapter();
+
     }
 }
+
+
+
+
+
+
