@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#F42A0F</color>
+<!--    orders bg-->
+    <color name="lightRed">#FA939C</color>
+    <color name="lightGreen">#AFE66F</color>
 </resources>
