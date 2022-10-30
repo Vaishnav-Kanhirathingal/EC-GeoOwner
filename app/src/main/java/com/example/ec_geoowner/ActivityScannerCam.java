@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +26,7 @@ import java.util.Objects;
 import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
-public class ScannerCam extends AppCompatActivity {
+public class ActivityScannerCam extends AppCompatActivity {
 
     private final int lensFacing = CameraSelector.LENS_FACING_BACK;
     private final int screenAspectRatio = AspectRatio.RATIO_4_3;
@@ -137,7 +136,7 @@ public class ScannerCam extends AppCompatActivity {
         dialogBinding.addBtn.setOnClickListener(view -> {
             // TODO: 28-10-2022 check if qty & discount is filled
 
-            startActivity(new Intent(ScannerCam.this, MainActivity.class));
+            startActivity(new Intent(ActivityScannerCam.this, MainActivity.class));
         });
         dialogBinding.cancelBtn.setOnClickListener(view -> dialog.dismiss());
 

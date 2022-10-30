@@ -43,7 +43,7 @@ public class Fragment_Update extends Fragment {
             public boolean onMenuItemClick(MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.menuUpdate:
-                        startActivity(new Intent(Fragment_Update.this.getActivity(),ScannerCam.class));
+                        startActivity(new Intent(Fragment_Update.this.getActivity(), ActivityScannerCam.class));
                         break;
                 }
                 return true;

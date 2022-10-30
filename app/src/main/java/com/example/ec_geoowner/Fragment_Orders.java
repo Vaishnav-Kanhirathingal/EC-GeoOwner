@@ -41,7 +41,7 @@ public class Fragment_Orders extends Fragment {
                 new Order("b","a",100),
                 new Order("c","a",100)};;
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        binding.recyclerView.setAdapter(new OrderAdapter(orders));
+        binding.recyclerView.setAdapter(new OrderAdapter(orders,getActivity()));
 
     }
 }

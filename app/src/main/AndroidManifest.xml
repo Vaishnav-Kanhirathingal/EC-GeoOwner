@@ -15,7 +15,7 @@
         android:theme="@style/Theme.ECGeoOwner"
         tools:targetApi="31">
         <activity
-            android:name=".ScannerCam"
+            android:name=".ActivityScannerCam"
             android:exported="false" />
         <activity
             android:name=".OtpVerification"
