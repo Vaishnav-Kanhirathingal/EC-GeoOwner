@@ -10,4 +10,16 @@ public class ItemOrdered {
         this.qunatity = qunatity;
         this.price = price;
     }
+
+    public String getItemName() {
+        return itemName;
+    }
+
+    public int getQunatity() {
+        return qunatity;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }

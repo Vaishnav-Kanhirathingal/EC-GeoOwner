@@ -9,4 +9,16 @@ public class Order {
         this.customer = customer;
         this.totalPrice = totalPrice;
     }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public String getCustomer() {
+        return customer;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
 }

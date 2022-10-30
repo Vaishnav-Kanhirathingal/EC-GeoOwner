@@ -15,10 +15,10 @@ import android.view.ViewGroup;
 
 import com.example.ec_geoowner.databinding.FragmentUpdateBinding;
 
-public class Update extends Fragment {
+public class Fragment_Update extends Fragment {
     FragmentUpdateBinding binding;
 
-    public Update() {
+    public Fragment_Update() {
         // Required empty public constructor
     }
 
@@ -43,7 +43,7 @@ public class Update extends Fragment {
             public boolean onMenuItemClick(MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.menuUpdate:
-                        startActivity(new Intent(Update.this.getActivity(),ScannerCam.class));
+                        startActivity(new Intent(Fragment_Update.this.getActivity(),ScannerCam.class));
                         break;
                 }
                 return true;

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 System.out.println("Done--"+binding.usernametxt.getEditText().getText().toString());
                 // TODO: 25-10-2022 check if all text fields are filled
-                startActivity(new Intent(MainActivity.this,Menus.class));
+                startActivity(new Intent(MainActivity.this, Bottom_nav_Menus.class));
             }
         });
         binding.signupBtn.setOnClickListener(new View.OnClickListener() {

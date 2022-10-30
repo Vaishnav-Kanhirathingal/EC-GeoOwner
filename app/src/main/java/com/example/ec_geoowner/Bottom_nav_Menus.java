@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.ec_geoowner.databinding.ActivityMenusBinding;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class Menus extends AppCompatActivity {
+public class Bottom_nav_Menus extends AppCompatActivity {
 
     ActivityMenusBinding binding;
 
@@ -21,19 +21,19 @@ public class Menus extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMenusBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        ReplaceFragment(new Update());
+        ReplaceFragment(new Fragment_Update());
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()){
                     case R.id.update:
-                        ReplaceFragment(new Update());
+                        ReplaceFragment(new Fragment_Update());
                         break;
                     case R.id.orders:
-                        ReplaceFragment(new Orders());
+                        ReplaceFragment(new Fragment_Orders());
                         break;
                     case R.id.profile:
-                        ReplaceFragment(new Profile());
+                        ReplaceFragment(new Fragment_Profile());
                         break;
                 }
                 return true;

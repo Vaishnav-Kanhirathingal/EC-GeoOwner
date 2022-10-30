@@ -24,7 +24,7 @@
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".Menus"
+            android:name=".Bottom_nav_Menus"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
