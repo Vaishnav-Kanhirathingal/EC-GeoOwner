@@ -1,7 +1,7 @@
 package com.example.ec_geoowner.data;
 
 public class Order {
-    String orderId,customer;
+    String orderId, customer;
     double totalPrice;
 
     public Order(String orderId, String customer, double totalPrice) {

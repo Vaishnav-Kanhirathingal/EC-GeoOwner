@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.ec_geoowner.Bottom_nav_Menus;
 import com.example.ec_geoowner.R;
 import com.example.ec_geoowner.data.ItemOrdered;
 import com.example.ec_geoowner.data.Order;
@@ -25,14 +24,14 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.holder> {
 
     public OrderAdapter(Order[] orders, Activity context) {
         this.orders = orders;
-        this.context=context;
-            }
+        this.context = context;
+    }
 
     @NonNull
     @Override
     public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view=inflater.inflate(R.layout.card_orders_placed,parent,false);
+        View view = inflater.inflate(R.layout.card_orders_placed, parent, false);
         return new holder(view);
     }
 
@@ -51,13 +50,13 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.holder> {
     }
 
     private void displayDialog(holder holder) {
-        Dialog dialog=new Dialog(context);
-        PromtOrderDetailsBinding binding=PromtOrderDetailsBinding.inflate(LayoutInflater.from(context));
+        Dialog dialog = new Dialog(context);
+        PromtOrderDetailsBinding binding = PromtOrderDetailsBinding.inflate(LayoutInflater.from(context));
         dialog.setContentView(binding.getRoot());
         dialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         dialog.show();
         binding.orderId.setText(orders[holder.getAdapterPosition()].getOrderId());
-        ItemOrdered[] ordereds = {new ItemOrdered("a",holder.getAdapterPosition(),100),new ItemOrdered("a",holder.getAdapterPosition(),100),new ItemOrdered("a",holder.getAdapterPosition(),100)};
+        ItemOrdered[] ordereds = {new ItemOrdered("a", holder.getAdapterPosition(), 100), new ItemOrdered("a", holder.getAdapterPosition(), 100), new ItemOrdered("a", holder.getAdapterPosition(), 100)};
         binding.rv.setLayoutManager(new LinearLayoutManager(context));
         binding.rv.setAdapter(new OrderItemAdapter(ordereds));
     }
@@ -67,13 +66,14 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.holder> {
         return orders.length;
     }
 
-    public class holder extends RecyclerView.ViewHolder{
-        TextView customer,orderId,totalPrice;
+    public class holder extends RecyclerView.ViewHolder {
+        TextView customer, orderId, totalPrice;
+
         public holder(@NonNull View itemView) {
             super(itemView);
-            customer=itemView.findViewById(R.id.customer);
-            orderId=itemView.findViewById(R.id.orderId);
-            totalPrice=itemView.findViewById(R.id.total_price);
+            customer = itemView.findViewById(R.id.customer);
+            orderId = itemView.findViewById(R.id.orderId);
+            totalPrice = itemView.findViewById(R.id.total_price);
         }
     }
 

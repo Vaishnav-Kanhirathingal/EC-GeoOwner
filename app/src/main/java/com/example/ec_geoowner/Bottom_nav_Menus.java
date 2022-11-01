@@ -25,7 +25,7 @@ public class Bottom_nav_Menus extends AppCompatActivity {
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch(item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.update:
                         ReplaceFragment(new Fragment_Update());
                         break;

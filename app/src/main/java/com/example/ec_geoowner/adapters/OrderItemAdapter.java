@@ -24,15 +24,15 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.hold
     @NonNull
     @Override
     public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.card_order_item,parent,false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.card_order_item, parent, false);
         return new holder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
         holder.productName.setText(itemsOrdered[position].getItemName());
-        String temp=itemsOrdered[position].getQunatity()+"x"+itemsOrdered[position].getPrice();
+        String temp = itemsOrdered[position].getQunatity() + "x" + itemsOrdered[position].getPrice();
         holder.quantPrice.setText(temp);
 
     }
@@ -43,12 +43,13 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.hold
     }
 
 
-    public class holder extends RecyclerView.ViewHolder{
-        TextView productName,quantPrice;
+    public class holder extends RecyclerView.ViewHolder {
+        TextView productName, quantPrice;
+
         public holder(@NonNull View itemView) {
             super(itemView);
-            productName=itemView.findViewById(R.id.item_name_txt);
-            quantPrice=itemView.findViewById(R.id.quant_price);
+            productName = itemView.findViewById(R.id.item_name_txt);
+            quantPrice = itemView.findViewById(R.id.quant_price);
         }
     }
 }

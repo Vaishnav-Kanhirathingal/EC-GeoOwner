@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="22sp"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:layout_margin="22sp">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,12 +17,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
             android:fontFamily="@font/aclonica"
             android:text="EC-Geo"
             android:textColor="@color/purple_700"
             android:textSize="70sp"
-            android:textStyle="bold"
-            android:layout_marginTop="100dp"></TextView>
+            android:textStyle="bold"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,50 +33,50 @@
             android:textSize="40sp">
 
         </TextView>
+
         <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/owner"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="4dp"
-            android:layout_gravity="center_horizontal"/>
+            android:src="@drawable/owner" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/usernametxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/username"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginHorizontal="10sp">
+            android:layout_marginHorizontal="10sp"
+            android:hint="@string/username">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passtxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_marginHorizontal="10sp">
+            android:layout_marginHorizontal="10sp"
+            android:hint="@string/password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:id="@+id/loginBtn"
-            android:layout_marginVertical="4sp"
             android:layout_marginHorizontal="10sp"
-            android:padding="14sp">
-        </Button>
+            android:layout_marginVertical="4sp"
+            android:padding="14sp"
+            android:text="@string/login"></Button>
 
 
     </LinearLayout>
@@ -101,9 +100,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
+            android:textColor="@color/black"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black">
+            android:textStyle="bold">
 
         </TextView>
     </LinearLayout>
